@@ -1,4 +1,4 @@
-import YouTube from 'react-youtube'
+import YouTube, { YouTubeEvent } from 'react-youtube'
 import './listen.css'
 import { useCallback, useRef } from 'react'
 
@@ -10,22 +10,25 @@ export default function Listen() {
   const dialogRef = useRef<HTMLDialogElement>(null)
 
   const closeDialog = useCallback(() => {
+    console.log('Closing 2', { ytRef, dialogRef: dialogRef.current })
+
+    ytRef.stopVideo()
     dialogRef.current?.close()
   }, [dialogRef])
 
-  let ytRef
+  let ytRef: YouTubeEvent['target']
 
   return (
     <>
       <section id="listen">
         <h1>Escúchanos</h1>
 
-        <button onClick={() => dialogRef.current?.showModal()}>Modal</button>
+        <button onClick={() => dialogRef.current?.showModal()}>Miedo</button>
       </section>
 
       <dialog ref={dialogRef}>
         <header className="dialog-header">
-          <button onClick={() => dialogRef.current?.close()}>X</button>
+          <button onClick={closeDialog}>X</button>
         </header>
 
         <YouTube
