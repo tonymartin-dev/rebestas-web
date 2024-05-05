@@ -1,0 +1,69 @@
+#us {
+  background-image: url(./img/paper.jpg);
+  color: var(--secondary-color);
+}
+
+.polaroid {
+  max-width: 30%;
+  padding: 1rem 1rem 4rem;
+  margin-left: 4rem;
+  transform: rotate(10deg);
+  border-radius: 0.3rem;
+  background-color: white;
+  box-shadow: 0.2rem 0.2rem 1rem black;
+  & img {
+    width: 100%;
+  }
+}
+
+.photo {
+  font-family: 'Rubik Dirt', system-ui;
+  width: 15rem;
+  height: 20rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 1rem;
+  margin: 0 0.5rem; /* TODO: Pasar a variable */
+  padding: 0.5rem; /* TODO: Pasar a variable */
+  overflow: hidden;
+
+  & > div {
+    height: 100%;
+    background-size: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+    filter: sepia(100%) contrast(2);
+    transition: var(--main-transition);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    &:hover {
+      filter: sepia(0%) contrast(1.3);
+      transform: scale(120%);
+    }
+  }
+
+  & p {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 0;
+    filter: drop-shadow(0 0 0.1rem black);
+  }
+
+  &.rebe > div {
+    background-image: url(./img/rebe.jpeg);
+  }
+  &.salva > div {
+    background-image: url(./img/salva.jpeg);
+  }
+  &.antonio > div {
+    background-image: url(./img/antonio.jpeg);
+  }
+  &.lobo > div {
+    background-image: url(./img/lobo.jpeg);
+  }
+  &.nacho > div {
+    background-image: url(./img/nacho.jpeg);
+  }
+}
