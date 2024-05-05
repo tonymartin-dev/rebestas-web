@@ -25,16 +25,16 @@ export default function Header() {
       </a>
       <ul>
         <li>
-          <a href="">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="">Conócenos</a>
+          <a href="#us">Conócenos</a>
         </li>
         <li>
-          <a href="">Nuestra música</a>
+          <a href="#listen">Nuestra música</a>
         </li>
         <li>
-          <a href="">Contacto</a>
+          <a href="#contact">Contacto</a>
         </li>
       </ul>
 

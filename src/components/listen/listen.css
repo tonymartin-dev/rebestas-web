@@ -1,6 +1,4 @@
 dialog {
-  width: 80%;
-  height: 80vh;
   flex-flow: column;
   padding: 0;
   border: none;

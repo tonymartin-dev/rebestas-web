@@ -15,6 +15,10 @@ function App() {
       <Us></Us>
 
       <Listen></Listen>
+
+      <section id="contact">
+        <h1>Contacta con nosotros</h1>
+      </section>
     </>
   )
 }
