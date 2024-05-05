@@ -1,14 +1,12 @@
 import YouTube, { YouTubeEvent } from 'react-youtube'
 import './listen.css'
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useRef } from 'react'
 
 const VIDEO_OPS = {
   playerVars: {},
 }
 
 export default function Listen() {
-  const [videoID, setVideoID] = useState<string>()
-
   const dialogRef = useRef<HTMLDialogElement>(null)
 
   const closeDialog = useCallback(() => {
