@@ -26,7 +26,7 @@ export default function Header() {
       <a href="" className="logo-container">
         <img src={rbLogo} className="logo" alt="Rebestas logo" />
       </a>
-      <ul>
+      <ul className="main-menu">
         <li>
           <a href="#home">Home</a>
         </li>

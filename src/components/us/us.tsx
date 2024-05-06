@@ -51,7 +51,7 @@ export default function Us() {
       <hr />
 
       <div className="main-content">
-        <div className="content">
+        <div className="content photos">
           <div className="photo nacho">
             <div>
               <p>Nacho</p>

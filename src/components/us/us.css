@@ -16,13 +16,18 @@
   }
 }
 
+.photos {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .photo {
   font-family: 'Rubik Dirt', system-ui;
   width: 15rem;
   height: 20rem;
   border: 1px solid var(--secondary-color);
   border-radius: 1rem;
-  margin: 0 0.5rem; /* TODO: Pasar a variable */
+  margin: 0.5rem 0.5rem; /* TODO: Pasar a variable */
   padding: 0.5rem; /* TODO: Pasar a variable */
   overflow: hidden;
 
