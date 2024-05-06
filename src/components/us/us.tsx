@@ -18,14 +18,14 @@ export default function Us() {
               Allá por Mayo de 2022, Salva (bajo) y Lobo (batería), dos chicos
               normales, deciden dar forma a sus experimentos sonoros. No son
               ningunos expertos en su instrumento (aún) así que acaban llamando
-              a Nacho, Rebe y Antonio, que tamoco lo son (aún), y empezando esta
-              aventura que llega hasta día de hoy.
+              a Nacho, Rebe y Antonio, que tampoco lo son (aún), y empezando
+              esta aventura que llega hasta día de hoy.
             </p>
             <p>
               Tras un comienzo accidentado como grupo de versiones, sin nadie al
-              volante, comiezan a componer sus propios temas abarcando un amplio
-              abanico de estilos desde el rock'n'roll más sesentero hasta el
-              hard rock, pasando por el garajeo y una pizquita de punk.
+              volante, comienzan a componer sus propios temas abarcando un
+              amplio abanico de estilos desde el rock'n'roll más sesentero hasta
+              el hard rock, pasando por el garajeo y una pizquita de punk.
             </p>
             <p>
               En la primavera de 2024 cierran su repertorio y piensan eso de "A
@@ -34,10 +34,10 @@ export default function Us() {
               empedernidos dan rienda suelta a su estilo en el escenario.
             </p>
             <p>
-              ¿Cómo los podríamos definir? Son como su origen como banda: el
-              barrio de Vallekas, en Madrid. Son un grupo de personas de las
-              distintas puntas de España, que toca un repertorio con música de
-              las distintas puntas del Rock.
+              ¿Cómo los podríamos definir? Son como su lugar de origen como
+              banda: el barrio de Vallekas, en Madrid. Son un grupo de personas
+              de las distintas puntas de España, que toca un repertorio con
+              música de las distintas puntas del Rock.
             </p>
             <p>Son Rock de Barrio.</p>
             <p>Son Rebestas.</p>
