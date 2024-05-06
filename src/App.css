@@ -30,7 +30,7 @@ section {
 }
 
 #home {
-  background-image: url(./main.jpeg);
+  background-image: url(/main.jpeg);
   background-size: cover;
   background-attachment: fixed;
   min-height: calc(100vh + 6rem);
