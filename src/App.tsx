@@ -19,8 +19,13 @@ function App() {
       <section id="contact">
         <h1>Contacta con nosotros</h1>
 
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="subject" value="Rebestas" />
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="subject" value="contact" />
           <p>
             <label>
               Your Name: <input type="text" name="name" />

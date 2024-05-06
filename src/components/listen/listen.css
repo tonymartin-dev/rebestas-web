@@ -1,3 +1,9 @@
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .listen-button {
   width: 30rem;
   padding: 0;
@@ -25,6 +31,10 @@
   &:hover .info-layer {
     opacity: 1;
   }
+}
+
+.reel-buton {
+  width: auto;
 }
 
 dialog {
