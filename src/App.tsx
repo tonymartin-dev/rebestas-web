@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <Header></Header>
+
       <section id="home">
         <img className="full-logo" src={logo} alt="Rebestas" />
       </section>
