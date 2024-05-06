@@ -9,11 +9,14 @@ export default function Header() {
   const [hasScrolled, setHasScrolled] = useState(false)
 
   const onScroll = useCallback(() => {
-    const htmlElement = document.querySelector('html')
+    const htmlElement = document.querySelector('#root')
     setHasScrolled(!!htmlElement?.scrollTop && htmlElement.scrollTop > 0)
   }, [setHasScrolled])
 
-  useEffect(() => document?.addEventListener('scroll', onScroll), [])
+  useEffect(
+    () => document.querySelector('#root')?.addEventListener('scroll', onScroll),
+    []
+  )
 
   const headerClass = hasScrolled ? ' scrolled' : ''
 
@@ -40,17 +43,17 @@ export default function Header() {
 
       <ul>
         <li>
-          <a href="">
+          <a href="https://www.instagram.com/rebestas/" target="_blank">
             <img src={igLogo} alt="instagram" />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://www.youtube.com/@rebestas" target="_blank">
             <img src={ytLogo} alt="youtube" />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://www.tiktok.com/@rebestas" target="_blank">
             <img src={tkLogo} alt="tiktok" />
           </a>
         </li>

@@ -2,6 +2,9 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
 }
 
 * {
@@ -16,6 +19,7 @@ section {
   align-items: center;
   justify-content: center;
   padding-top: 6rem;
+  scroll-snap-align: start;
 
   & hr {
     width: 80%;

@@ -14,8 +14,8 @@ const VIDEO_LIST = [
     img: '/yt-min/miedo.jpg',
   },
   {
-    title: 'Ladrón',
-    subtitle: 'Directo desde local',
+    title: 'Ladrón de mis recuerdos',
+    subtitle: 'Directo desde local (23/02/2024)',
     id: 'GRgzb3E-oDU',
     img: '/yt-min/ladron.jpg',
   },

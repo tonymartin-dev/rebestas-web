@@ -20,11 +20,7 @@ function App() {
         <h1>Contacta con nosotros</h1>
 
         <form name="contact" method="POST" data-netlify="true">
-          <input
-            type="hidden"
-            name="subject"
-            value="Message from Rebestas Form"
-          />
+          <input type="hidden" name="subject" value="Rebestas" />
           <p>
             <label>
               Your Name: <input type="text" name="name" />
