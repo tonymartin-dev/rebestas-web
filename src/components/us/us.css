@@ -1,5 +1,5 @@
 #us {
-  background-image: url(./img/paper.jpg);
+  background-image: url(/img/paper.jpg);
   color: var(--secondary-color);
 }
 
@@ -52,18 +52,18 @@
   }
 
   &.rebe > div {
-    background-image: url(./img/rebe.jpeg);
+    background-image: url(/img/rebe.jpeg);
   }
   &.salva > div {
-    background-image: url(./img/salva.jpeg);
+    background-image: url(/img/salva.jpeg);
   }
   &.antonio > div {
-    background-image: url(./img/antonio.jpeg);
+    background-image: url(/img/antonio.jpeg);
   }
   &.lobo > div {
-    background-image: url(./img/lobo.jpeg);
+    background-image: url(/img/lobo.jpeg);
   }
   &.nacho > div {
-    background-image: url(./img/nacho.jpeg);
+    background-image: url(/img/nacho.jpeg);
   }
 }
