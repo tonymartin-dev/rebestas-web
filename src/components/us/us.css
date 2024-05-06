@@ -72,3 +72,12 @@
     background-image: url(/img/nacho.jpeg);
   }
 }
+
+@media (max-width: 1148px) {
+  .polaroid {
+    max-width: none;
+  }
+  #us .content {
+    flex-flow: wrap-reverse;
+  }
+}
