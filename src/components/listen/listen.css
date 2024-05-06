@@ -1,9 +1,47 @@
+.listen-button {
+  width: 30rem;
+  padding: 0;
+  overflow: hidden;
+  margin: 2rem;
+  position: relative;
+  color: var(--main-color);
+  & img {
+    width: 100%;
+  }
+  & .info-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: var(--main-transition);
+  }
+  &:hover .info-layer {
+    opacity: 1;
+  }
+}
+
 dialog {
   flex-flow: column;
   padding: 0;
   border: none;
   background-color: transparent;
   overflow: visible;
+}
+
+.dialog-content {
+  height: 60rem;
+  width: 100rem;
+  max-height: 80vh;
+  max-width: 80vw;
+  display: flex;
+  flex-flow: column;
   & > div {
     flex-grow: 1;
   }
