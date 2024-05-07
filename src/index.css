@@ -19,6 +19,8 @@
   --secondary-color: rgb(28, 28, 28);
 
   --main-transition: 0.2s;
+
+  --breakpoint-desktop-screen: 1200px;
 }
 
 body {
@@ -105,5 +107,17 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
   }
 }

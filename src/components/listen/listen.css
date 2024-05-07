@@ -2,10 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  max-width: 100%;
 }
 
 .listen-button {
   width: 30rem;
+  max-width: 90%;
   padding: 0;
   overflow: hidden;
   margin: 2rem;

@@ -73,9 +73,10 @@
   }
 }
 
-@media (max-width: 1148px) {
+@media (max-width: 1200px) {
   .polaroid {
-    max-width: none;
+    max-width: 90%;
+    margin: 1rem 0;
   }
   #us .content {
     flex-flow: wrap-reverse;

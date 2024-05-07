@@ -68,8 +68,9 @@ ul:last-child {
   filter: drop-shadow(0 0 0.5rem #ff64acaa);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .main-menu {
     display: none;
+    flex-grow: 0;
   }
 }
