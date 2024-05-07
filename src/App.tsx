@@ -16,6 +16,8 @@ function App() {
 
   const changeHandler = useCallback(
     (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      console.log({ e })
+
       if (!e.target?.name) {
         return
       }
@@ -31,6 +33,8 @@ function App() {
   )
 
   const submitHandler = useCallback((e: FormEvent<HTMLFormElement>) => {
+    console.log({ formValues })
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
