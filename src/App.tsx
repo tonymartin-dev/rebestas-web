@@ -20,12 +20,9 @@ function App() {
       <section id="contact">
         <h1>Contacta con nosotros</h1>
 
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+
           <input type="hidden" name="subject" value="contact" />
           <p>
             <label>
@@ -42,6 +39,7 @@ function App() {
               Message: <textarea name="message"></textarea>
             </label>
           </p>
+          <div data-netlify-recaptcha="true"></div>
           <p>
             <button type="submit">Send</button>
           </p>
