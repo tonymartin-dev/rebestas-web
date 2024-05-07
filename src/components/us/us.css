@@ -14,6 +14,12 @@
   & img {
     width: 100%;
   }
+
+  &.left {
+    margin-left: 0;
+    margin-right: 4rem;
+    transform: rotate(-10deg);
+  }
 }
 
 .photos {
@@ -22,7 +28,6 @@
 }
 
 .photo {
-  font-family: 'Rubik Dirt', system-ui;
   width: 15rem;
   height: 20rem;
   border: 1px solid var(--secondary-color);
@@ -39,9 +44,10 @@
     filter: sepia(100%) contrast(2);
     transition: var(--main-transition);
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 2rem;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1rem;
     cursor: pointer;
     &:hover {
       filter: sepia(0%) contrast(1.3);
@@ -50,10 +56,15 @@
   }
 
   & p {
-    font-size: 2rem;
     color: var(--main-color);
     margin: 0;
     filter: drop-shadow(0 0 0.1rem black);
+    line-height: 1;
+  }
+
+  & .photo-name {
+    font-family: 'Rubik Dirt', system-ui;
+    font-size: 2rem;
   }
 
   &.rebe > div {
