@@ -1,3 +1,5 @@
+import './contact.css'
+
 import { ChangeEvent, FormEvent, useCallback, useState } from 'react'
 
 const encode = (data: Record<string, string>) => {
@@ -43,55 +45,52 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <h1>Contacta con nosotros</h1>
+      <h2>Contacta con nosotros</h2>
 
       <form
         name="contact"
         method="POST"
+        className="contact-form"
         data-netlify="true"
         onSubmit={submitHandler}
       >
         <input type="hidden" name="form-name" value="contact" />
 
         <input type="hidden" name="subject" value="contact" />
-        <p>
-          <label>
-            Nombre:{' '}
-            <input
-              type="text"
-              name="name"
-              onChange={changeHandler}
-              placeholder="¿Cómo te llamas?"
-              required
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Email:{' '}
-            <input
-              type="email"
-              name="email"
-              onChange={changeHandler}
-              placeholder="Danos tu email para que podamos contactar contigo"
-              required
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Mensaje:{' '}
-            <textarea
-              name="message"
-              onChange={changeHandler}
-              placeholder="¡Cuéntanos lo que quieras!"
-            ></textarea>
-          </label>
-        </p>
+        <label>
+          <span>Nombre: </span>
+          <input
+            type="text"
+            name="name"
+            onChange={changeHandler}
+            placeholder="¿Cómo te llamas?"
+            required
+          />
+        </label>
+
+        <label>
+          <span>Email: </span>
+          <input
+            type="email"
+            name="email"
+            onChange={changeHandler}
+            placeholder="Danos tu email para que podamos contactar contigo"
+            required
+          />
+        </label>
+
+        <label>
+          <span>Mensaje: </span>
+          <textarea
+            name="message"
+            onChange={changeHandler}
+            placeholder="¡Cuéntanos lo que quieras!"
+          ></textarea>
+        </label>
+
         <div data-netlify-recaptcha="true"></div>
-        <p>
-          <button type="submit">Send</button>
-        </p>
+
+        <button type="submit">Enviar</button>
       </form>
     </section>
   )

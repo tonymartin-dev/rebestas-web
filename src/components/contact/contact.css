@@ -1,0 +1,31 @@
+.contact-form {
+  display: grid;
+  width: 40rem;
+  grid-template-columns: min-content auto;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+  & label {
+    display: contents;
+  }
+
+  & span {
+    padding: 1rem 0;
+    text-align: right;
+  }
+
+  & input,
+  textarea {
+    border: none;
+    padding: 1rem;
+    border-radius: 0.2rem;
+  }
+
+  & textarea {
+    height: 5rem;
+  }
+
+  & button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}

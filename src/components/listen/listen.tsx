@@ -32,7 +32,7 @@ const YT_LIST: VideoData[] = [
   },
   {
     title: 'No me interesa',
-    subtitle: 'Directo (20/04/2024)',
+    subtitle: 'Directo - Sala La Trinchera (20/04/2024)',
     id: 'pyaQw3SEpv4',
     img: '/yt-min/no-me-interesa.jpg',
   },
@@ -41,25 +41,25 @@ const YT_LIST: VideoData[] = [
 const IG_LIST: VideoData[] = [
   {
     title: 'A tomar por el ojal',
-    subtitle: 'Directo - Sala Barco 22/03/24',
+    subtitle: 'Directo - Sala Barco (22/03/24)',
     img: reel1,
     id: 'https://www.instagram.com/reel/C5Ak8D0qNay/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
   },
   {
     title: 'Ladrón de mis recuerdos',
-    subtitle: 'Directo - Sala Barco 22/03/24',
+    subtitle: 'Directo - Sala Barco (22/03/24)',
     img: reel2,
     id: 'https://www.instagram.com/reel/C5EJc99KJ2o/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
   },
   {
     title: 'Nadie al volante',
-    subtitle: 'Directo - Sala La Trinchera 20/04/24',
+    subtitle: 'Directo - Sala La Trinchera (20/04/24)',
     img: reel3,
     id: 'https://www.instagram.com/reel/C6eDG9iqX-m/?utm_source=ig_web_copy_link',
   },
   {
     title: 'A tomar por el ojal',
-    subtitle: 'Directo - Sala La Trinchera 20/04/24',
+    subtitle: 'Directo - Sala La Trinchera (20/04/24)',
     img: reel4,
     id: 'https://www.instagram.com/reel/C6Gj71AqqGF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
   },
@@ -83,7 +83,7 @@ export default function Listen() {
   return (
     <>
       <section id="listen">
-        <h1>Escúchanos</h1>
+        <h2>Escúchanos</h2>
 
         <div className="videos">
           {YT_LIST.map(({ title, subtitle, img, id }) => (
