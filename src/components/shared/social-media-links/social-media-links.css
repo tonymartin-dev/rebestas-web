@@ -1,0 +1,26 @@
+.social-media-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  flex-grow: 1;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0px;
+  & li {
+    margin: 0 0.6rem;
+    text-transform: uppercase;
+    filter: drop-shadow(0 0 0.1rem black);
+  }
+
+  & li {
+    & img {
+      height: 1.5rem;
+      filter: invert(100%) blur(0.5px);
+    }
+  }
+
+  &.big-icons li img {
+    height: 4rem;
+    margin: 0 2rem;
+  }
+}

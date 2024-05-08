@@ -1,4 +1,6 @@
+import SocialMediaLinks from '../shared/social-media-links/social-media-links'
 import './contact.css'
+import emailImg from './assets/email.png'
 
 import { FormEvent, useCallback, useRef } from 'react'
 
@@ -35,6 +37,30 @@ export default function Contact() {
   return (
     <section id="contact">
       <h2>Contacta con nosotros</h2>
+
+      <p>
+        Nos encanta que nos digan cosas bonitas 🫶. <br /> Mándanos un DM en
+        cualquiera de nuestras redes o déjanos un comentario en alguna de
+        nuestras publicaciones.
+      </p>
+
+      <p>
+        <SocialMediaLinks bigIcons></SocialMediaLinks>
+      </p>
+
+      <p>También puedes mandarnos un mail aquí 👇</p>
+
+      <p>
+        <a href="mailto:rebestasband@gmail.com">
+          <img src={emailImg} alt="" />
+        </a>
+      </p>
+
+      <p>
+        Y ya, si eres de es@s que no tienen ganas ni de abrir un enlace, pero
+        aún así no puedes resistirte a decirnos algo bonito, tienes este
+        formulario. ¡Más fácil, imposible!
+      </p>
 
       <form
         ref={formRef}

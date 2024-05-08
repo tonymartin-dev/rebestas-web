@@ -36,17 +36,6 @@ ul {
   }
 }
 
-ul:last-child {
-  justify-content: flex-end;
-
-  & li {
-    & img {
-      height: 1.5rem;
-      filter: invert(100%) blur(0.5px);
-    }
-  }
-}
-
 .logo-container {
   transform: scale(0);
   flex: 0 0 auto;

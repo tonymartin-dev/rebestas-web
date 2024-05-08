@@ -1,9 +1,7 @@
 import './header.css'
 import rbLogo from './assets/rb.png'
-import igLogo from './assets/ig.svg'
-import ytLogo from './assets/yt.svg'
-import tkLogo from './assets/tiktok.svg'
 import { useCallback, useEffect, useState } from 'react'
+import SocialMediaLinks from '../shared/social-media-links/social-media-links'
 
 export default function Header() {
   const [hasScrolled, setHasScrolled] = useState(false)
@@ -41,23 +39,7 @@ export default function Header() {
         </li>
       </ul>
 
-      <ul>
-        <li>
-          <a href="https://www.instagram.com/rebestas/" target="_blank">
-            <img src={igLogo} alt="instagram" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/@rebestas" target="_blank">
-            <img src={ytLogo} alt="youtube" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/@rebestas" target="_blank">
-            <img src={tkLogo} alt="tiktok" />
-          </a>
-        </li>
-      </ul>
+      <SocialMediaLinks></SocialMediaLinks>
     </header>
   )
 }

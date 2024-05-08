@@ -1,6 +1,7 @@
 .contact-form {
   display: grid;
   width: 40rem;
+  max-width: 90%;
   grid-template-columns: min-content auto;
   column-gap: 0.5rem;
   row-gap: 1rem;
@@ -21,7 +22,7 @@
   }
 
   & textarea {
-    height: 5rem;
+    height: 8rem;
   }
 
   & button {
