@@ -1,3 +1,29 @@
+#contact {
+  background-image: url(/img/love-letter.jpg);
+  background-size: cover;
+  background-position: bottom;
+
+  & h2 {
+    filter: drop-shadow(0.5rem 0.3rem 4px black);
+    margin-bottom: 3rem;
+  }
+
+  & .contact-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    max-width: 90%;
+  }
+}
+
+.email-img {
+  max-width: 90%;
+}
+
 .contact-form {
   display: grid;
   width: 40rem;

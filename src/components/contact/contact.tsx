@@ -21,7 +21,6 @@ export default function Contact() {
 
     const formData = new FormData(formRef.current)
     const formValues = Object.fromEntries(formData)
-    console.log({ formValues })
 
     fetch('/', {
       method: 'POST',
@@ -38,73 +37,77 @@ export default function Contact() {
     <section id="contact">
       <h2>Contacta con nosotros</h2>
 
-      <p>
-        Nos encanta que nos digan cosas bonitas 🫶. <br /> Mándanos un DM en
-        cualquiera de nuestras redes o déjanos un comentario en alguna de
-        nuestras publicaciones.
-      </p>
+      <div className="contact-card">
+        <p>
+          Nos encanta que nos digan cosas bonitas 🫶. <br /> Mándanos un DM en
+          cualquiera de nuestras redes o déjanos un comentario en alguna de
+          nuestras publicaciones.
+        </p>
 
-      <p>
-        <SocialMediaLinks bigIcons></SocialMediaLinks>
-      </p>
+        <p>
+          <SocialMediaLinks bigIcons></SocialMediaLinks>
+        </p>
+      </div>
 
-      <p>También puedes mandarnos un mail aquí 👇</p>
+      <div className="contact-card">
+        <p>También puedes mandarnos un mail aquí 👇</p>
+        <p>
+          <a href="mailto:rebestasband@gmail.com">
+            <img className="email-img" src={emailImg} alt="" />
+          </a>
+        </p>{' '}
+      </div>
 
-      <p>
-        <a href="mailto:rebestasband@gmail.com">
-          <img src={emailImg} alt="" />
-        </a>
-      </p>
+      <div className="contact-card">
+        <p>
+          Y ya, si eres de es@s que no tienen ganas ni de abrir un enlace, pero
+          aún así no puedes resistirte a decirnos algo bonito, tienes este
+          formulario. ¡Más fácil, imposible!
+        </p>
+        <form
+          ref={formRef}
+          name="contact"
+          method="POST"
+          className="contact-form"
+          data-netlify="true"
+          onSubmit={submitHandler}
+        >
+          <input type="hidden" name="form-name" value="contact" />
 
-      <p>
-        Y ya, si eres de es@s que no tienen ganas ni de abrir un enlace, pero
-        aún así no puedes resistirte a decirnos algo bonito, tienes este
-        formulario. ¡Más fácil, imposible!
-      </p>
+          <input type="hidden" name="subject" value="contact" />
+          <label>
+            <span>Nombre: </span>
+            <input
+              type="text"
+              name="name"
+              placeholder="¿Cómo te llamas?"
+              required
+            />
+          </label>
 
-      <form
-        ref={formRef}
-        name="contact"
-        method="POST"
-        className="contact-form"
-        data-netlify="true"
-        onSubmit={submitHandler}
-      >
-        <input type="hidden" name="form-name" value="contact" />
+          <label>
+            <span>Email: </span>
+            <input
+              type="email"
+              name="email"
+              placeholder="Danos tu email para que podamos contactar contigo"
+              required
+            />
+          </label>
 
-        <input type="hidden" name="subject" value="contact" />
-        <label>
-          <span>Nombre: </span>
-          <input
-            type="text"
-            name="name"
-            placeholder="¿Cómo te llamas?"
-            required
-          />
-        </label>
+          <label>
+            <span>Mensaje: </span>
+            <textarea
+              name="message"
+              placeholder="¡Cuéntanos lo que quieras!"
+            ></textarea>
+          </label>
 
-        <label>
-          <span>Email: </span>
-          <input
-            type="email"
-            name="email"
-            placeholder="Danos tu email para que podamos contactar contigo"
-            required
-          />
-        </label>
+          <div data-netlify-recaptcha="true"></div>
 
-        <label>
-          <span>Mensaje: </span>
-          <textarea
-            name="message"
-            placeholder="¡Cuéntanos lo que quieras!"
-          ></textarea>
-        </label>
-
-        <div data-netlify-recaptcha="true"></div>
-
-        <button type="submit">Enviar</button>
-      </form>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
     </section>
   )
 }

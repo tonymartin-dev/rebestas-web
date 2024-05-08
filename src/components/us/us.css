@@ -1,11 +1,16 @@
 #us {
-  background-image: url(/img/paper.jpg);
+  background-image: url(/img/torn-paper.png);
   color: var(--secondary-color);
+  filter: drop-shadow(13px -7px 4px black);
+  padding-bottom: 12rem;
+  background-size: cover;
+  background-position: right;
+  padding-top: 10rem;
 }
 
 .polaroid {
   max-width: 30%;
-  padding: 1rem 1rem 4rem;
+  padding: 1rem 1rem 5rem;
   margin-left: 4rem;
   transform: rotate(10deg);
   border-radius: 0.3rem;
@@ -19,6 +24,10 @@
     margin-left: 0;
     margin-right: 4rem;
     transform: rotate(-10deg);
+  }
+
+  & article {
+    filter: drop-shadow(1px 1px 0.5px white);
   }
 }
 
@@ -85,11 +94,15 @@
 }
 
 @media (max-width: 1200px) {
-  .polaroid {
-    max-width: 90%;
-    margin: 1rem 0;
-  }
   #us .content {
     flex-flow: wrap-reverse;
+    justify-content: center;
+  }
+  .polaroid {
+    max-width: min(90%, 30rem);
+    margin: 1rem 0;
+    &.left {
+      margin-right: 0;
+    }
   }
 }
