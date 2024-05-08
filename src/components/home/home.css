@@ -1,0 +1,77 @@
+#home {
+  background-image: url(/main.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: calc(100vh + 6rem);
+  margin-top: -6rem;
+  justify-content: flex-start;
+  animation: hero-pumping 20s infinite;
+}
+
+.full-logo {
+  max-width: 60%;
+  animation: 1s mail-logo-enter;
+}
+
+@media (max-width: 1200px) {
+  #home {
+    min-height: 50vh;
+    animation: none;
+    background-attachment: unset;
+  }
+}
+
+@keyframes hero-pumping {
+  0% {
+    background-size: 100% auto;
+  }
+  50% {
+    background-size: 110% auto;
+  }
+  100% {
+    background-size: 100% auto;
+  }
+}
+
+@keyframes mail-logo-enter {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(-5vh);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(5vh);
+  }
+  30% {
+    transform: translateY(-2vh);
+  }
+  33% {
+    transform: translateY(1vh);
+    opacity: 0;
+  }
+  35% {
+    transform: translateY(1vh);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  71% {
+    opacity: 1;
+  }
+
+  89% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  91% {
+    opacity: 1;
+  }
+}
