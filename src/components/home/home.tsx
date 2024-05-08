@@ -1,3 +1,4 @@
+import './home.css'
 import logo from './assets/logo-full.png'
 
 export default function Home() {
