@@ -1,6 +1,6 @@
 import './contact.css'
 
-import { ChangeEvent, FormEvent, useCallback, useState } from 'react'
+import { FormEvent, useCallback, useRef } from 'react'
 
 const encode = (data: Record<string, string>) => {
   return Object.keys(data)
@@ -9,27 +9,16 @@ const encode = (data: Record<string, string>) => {
 }
 
 export default function Contact() {
-  const [formValues, setFormValues] = useState<Record<string, string>>({})
-
-  const changeHandler = useCallback(
-    (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      console.log({ e })
-
-      if (!e.target?.name) {
-        return
-      }
-
-      const target = e.target
-
-      return setFormValues({
-        ...formValues,
-        [target.name]: target.value,
-      })
-    },
-    [formValues, setFormValues]
-  )
+  const formRef = useRef<HTMLFormElement>(null)
 
   const submitHandler = useCallback((e: FormEvent<HTMLFormElement>) => {
+    if (!formRef?.current) {
+      alert('Ha habido un error al enviar el formulario.')
+      return
+    }
+
+    const formData = new FormData(formRef.current)
+    const formValues = Object.fromEntries(formData)
     console.log({ formValues })
 
     fetch('/', {
@@ -48,6 +37,7 @@ export default function Contact() {
       <h2>Contacta con nosotros</h2>
 
       <form
+        ref={formRef}
         name="contact"
         method="POST"
         className="contact-form"
@@ -62,7 +52,6 @@ export default function Contact() {
           <input
             type="text"
             name="name"
-            onChange={changeHandler}
             placeholder="¿Cómo te llamas?"
             required
           />
@@ -73,7 +62,6 @@ export default function Contact() {
           <input
             type="email"
             name="email"
-            onChange={changeHandler}
             placeholder="Danos tu email para que podamos contactar contigo"
             required
           />
@@ -83,7 +71,6 @@ export default function Contact() {
           <span>Mensaje: </span>
           <textarea
             name="message"
-            onChange={changeHandler}
             placeholder="¡Cuéntanos lo que quieras!"
           ></textarea>
         </label>
