@@ -12,10 +12,6 @@ function App() {
 
       <Home></Home>
 
-      <Us></Us>
-
-      <Listen></Listen>
-
       <Contact></Contact>
     </>
   )
