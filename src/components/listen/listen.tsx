@@ -19,49 +19,49 @@ const VIDEO_OPS = {
 
 const YT_LIST: VideoData[] = [
   {
-    title: 'Miedo',
-    subtitle: 'Videolyric',
-    id: 'Mc8M4EI5G2U',
-    img: '/yt-min/miedo.jpg',
+    title: 'Vida Normal',
+    subtitle: 'Videoclip Oficial',
+    id: 'RD_C2UDD2p4rw',
+    img: '/yt-min/vida-normal.png',
   },
   {
-    title: 'Ladrón de mis recuerdos',
-    subtitle: 'Directo desde local (23/02/2024)',
-    id: 'GRgzb3E-oDU',
-    img: '/yt-min/ladron.jpg',
+    title: 'Reb\'n\'taos',
+    subtitle: 'Directo - Pub Grace O\'Malley (22/02/2025)',
+    id: 'zZy72GgnZdw',
+    img: '/yt-min/reb-n-taos.png',
   },
   {
-    title: 'No me interesa',
-    subtitle: 'Directo - Sala La Trinchera (20/04/2024)',
-    id: 'pyaQw3SEpv4',
-    img: '/yt-min/no-me-interesa.jpg',
+    title: 'Resumen de concierto',
+    subtitle: 'Directo - Taberna Kanalla (10/05/2025)',
+    id: '1yVuZhjDXCE',
+    img: '/yt-min/kanalla.png',
   },
 ]
 
 const IG_LIST: VideoData[] = [
   {
-    title: 'A tomar por el ojal',
-    subtitle: 'Directo - Sala Barco (22/03/24)',
-    img: reel1,
-    id: 'https://www.instagram.com/reel/C5Ak8D0qNay/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-  },
-  {
-    title: 'Ladrón de mis recuerdos',
-    subtitle: 'Directo - Sala Barco (22/03/24)',
-    img: reel2,
-    id: 'https://www.instagram.com/reel/C5EJc99KJ2o/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-  },
-  {
     title: 'Nadie al volante',
-    subtitle: 'Directo - Sala La Trinchera (20/04/24)',
-    img: reel3,
-    id: 'https://www.instagram.com/reel/C6eDG9iqX-m/?utm_source=ig_web_copy_link',
+    subtitle: 'Directo  Desde el local de ensayo',
+    img: reel1,
+    id: 'DIbSXw-o7g2',
   },
   {
-    title: 'A tomar por el ojal',
-    subtitle: 'Directo - Sala La Trinchera (20/04/24)',
+    title: 'Reb\'n\'taos',
+    subtitle: 'Directo - Taberna Kanalla (10/05/2025)',
+    img: reel2,
+    id: 'DKHYEj0I1no',
+  },
+  {
+    title: 'Amigas tóxicas',
+    subtitle: 'Directo - Sonic Boom (01/06/2025)',
+    img: reel3,
+    id: 'DKhlLtqooGX',
+  },
+  {
+    title: 'Reb\'n\'taos',
+    subtitle: 'Directo - Pub Grace O\'Malley (22/02/2025)',
     img: reel4,
-    id: 'https://www.instagram.com/reel/C6Gj71AqqGF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+    id: 'DGyVMAatvqE',
   },
 ]
 
@@ -105,7 +105,7 @@ export default function Listen() {
 
         <div className="videos">
           {IG_LIST.map(({ title, subtitle, img, id }) => (
-            <a href={id} target="_blank">
+            <a href={`https://www.instagram.com/reel/${id}`} target="_blank">
               <button className="listen-button reel-buton">
                 <img src={img} alt="" />
                 <div className="info-layer">

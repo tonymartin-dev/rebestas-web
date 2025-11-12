@@ -17,6 +17,11 @@
   --container-padding: 1rem;
   --main-color: rgb(235, 235, 235);
   --secondary-color: rgb(28, 28, 28);
+  
+  --main-glow-color: #FFD85E;
+  --secondary-glow-color: #7B3EFF;
+
+  --main-bg-color: #F5F5F5;
 
   --main-transition: 0.2s;
 

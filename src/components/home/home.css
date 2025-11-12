@@ -1,26 +1,46 @@
 #home {
-  background-image: url(/img/DSC_0020.jpg);
+  background-image: url(/img/hero.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;
+  background-color: black;
   min-height: calc(100vh + 6rem);
   justify-content: flex-start;
   animation: hero-pumping 20s infinite;
+
+  .hero-container {
+    max-width: 60%;
+    display: flex;
+    flex-flow: column;
+    text-align: right;
+  }
+  
+  .full-logo {
+    animation: 1s mail-logo-enter;
+    z-index: 10;
+  }
+
+  h1 {
+    animation: 2s fade-in,
+               2s glow-tile infinite alternate 2s;
+    color: #111;
+    text-shadow: 0 0 5px #FFF, 0
+      0 10px #FFF, 
+      0 0 5px #FFF, 
+      0 0 5px var(--glow-color), 
+      0 0 5px var(--glow-color), 
+      0 0 5px var(--glow-color), 
+      0 0 5px var(--glow-color), 
+      0 0 5px var(--glow-color);
+    margin-top: -11vw;
+    font-size: 4vw;
+    margin-right: 2vw;
+  }
 }
 
-.full-logo {
-  max-width: 60%;
-  animation: 1s mail-logo-enter;
-}
 
-h1, p {
-    color: white;
-    background: rgba(0, 0, 0, .8);
-    padding: 8px;
-    border-radius: 4px;
-    margin: 4px;
-}
+
 
 @media (max-width: 1200px) {
   #home {
@@ -28,6 +48,11 @@ h1, p {
     animation: none;
     background-attachment: unset;
   }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes hero-pumping {
@@ -80,5 +105,26 @@ h1, p {
   }
   91% {
     opacity: 1;
+  }
+}
+
+@keyframes glow-tile {
+  0%, 20%, 90%, 100% {
+    text-shadow: 0 0 2px #FFF, 0 0 2px #FFF, 0 0 2px #FFF,
+      0 0 2px var(--main-glow-color), 0 0 2px var(--main-glow-color),
+      0 0 2px var(--main-glow-color), 0 0 2px var(--main-glow-color),
+      0 0 2px var(--main-glow-color);
+  }
+  10%, 80% {
+    text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px #FFF,
+      0 0 5px var(--main-glow-color), 0 0 5px var(--main-glow-color),
+      0 0 5px var(--main-glow-color), 0 0 5px var(--main-glow-color),
+      0 0 5px var(--main-glow-color);
+  }
+  40% {
+    text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px #FFF,
+      0 0 5px var(--secondary-glow-color), 0 0 5px var(--secondary-glow-color),
+      0 0 5px var(--secondary-glow-color), 0 0 5px var(--secondary-glow-color),
+      0 0 5px var(--secondary-glow-color);
   }
 }

@@ -36,7 +36,8 @@
 }
 
 .reel-buton {
-  width: auto;
+  width: 200px;
+  flex: 0 0 50%;
 }
 
 dialog {

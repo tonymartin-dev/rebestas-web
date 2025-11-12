@@ -28,14 +28,14 @@ export default function Header() {
         <li>
           <a href="#home">Home</a>
         </li>
-        {/*
+        
         <li>
           <a href="#us">Conócenos</a>
         </li>
         <li>
           <a href="#listen">Nuestra música</a>
         </li>
-        */}
+        
         <li>
           <a href="#contact">Contacto</a>
         </li>

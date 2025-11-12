@@ -12,16 +12,11 @@ export default function Us() {
         <div className="content">
           <article>
             <p>
-              Dos madrileños, dos malagueñ@s y un gallego entran a un local de
-              ensayo de Vallekas y... ¡así nace Rebestas!.
-            </p>
-            <p>
               Allá por Mayo de 2022, Salva (bajo) y Lobo (batería), dos chicos
               normales, deciden dar forma a sus experimentos sonoros. No son
               ningunos expertos en su instrumento (aún) así que acaban llamando
               a Nacho (teclados), Rebe (voz) y Antonio (guitarra), que tampoco
-              lo son (aún), y empezando esta aventura que llega hasta día de
-              hoy.
+              lo son (aún), y ahí comienza la aventura.
             </p>
             <p>
               Tras un comienzo accidentado como grupo de versiones, sin nadie al
@@ -48,14 +43,22 @@ export default function Us() {
               escenario.
             </p>
             <p>
+              Tras una serie de entradas y salidas de miembros, en la navidad de 2024
+              se incorpora Vir a la voz, dando un nuevo aire a la banda y
+              culminando la formación actual, formada por Vir (voz), Antonio (guitarra),
+              Salva (bajo) y Lobo (batería).
+            </p>
+            <p>
               ¿Cómo nos podríamos definir? Somos como nuestro lugar de origen
               como banda: el barrio de Vallekas, en Madrid. Somos un grupo de
               personas de las distintas puntas de España, y tocamos un
               repertorio con música de las distintas puntas del Rock.
             </p>
-            <p>
-              Somos Rock de Barrio. <br /> Somos Rebestas.
-            </p>
+            <div className="bottom-bio-line">
+              Somos Rock de Barrio.
+              <h3>Somos Rebestas.</h3>
+              Y no hay nadie al volante.
+            </div>
           </article>
         </div>
       </div>
@@ -64,21 +67,15 @@ export default function Us() {
 
       <div className="main-content">
         <div className="content photos">
-          <div className="photo nacho">
-            <div>
-              <p className="photo-name">Nacho</p>
-              <p>Teclas</p>
-            </div>
-          </div>
           <div className="photo antonio">
             <div>
               <p className="photo-name">Antonio</p>
               <p>Cuerdas finitas</p>
             </div>
           </div>
-          <div className="photo rebe">
+          <div className="photo vir">
             <div>
-              <p className="photo-name">Rebe</p>
+              <p className="photo-name">Vir</p>
               <p>Gritos</p>
             </div>
           </div>
