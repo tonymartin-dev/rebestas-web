@@ -1,3 +1,7 @@
+#listen {
+  color: var(--secondary-text-color);
+}
+
 .videos {
   display: flex;
   flex-wrap: wrap;

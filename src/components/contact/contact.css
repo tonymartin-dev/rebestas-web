@@ -1,5 +1,5 @@
 #contact {
-  background-image: url(/img/love-letter.jpg);
+  background-image: url(/img/brick-wall.png);
   background-size: cover;
   background-position: bottom;
 
@@ -54,5 +54,6 @@
   & button {
     grid-column-start: 1;
     grid-column-end: 3;
+    color: white;
   }
 }
