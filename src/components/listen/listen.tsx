@@ -21,20 +21,20 @@ const YT_LIST: VideoData[] = [
   {
     title: 'Vida Normal',
     subtitle: 'Videoclip Oficial',
-    id: 'RD_C2UDD2p4rw',
+    id: '_C2UDD2p4rw',
     img: '/yt-min/vida-normal.webp',
+  },
+  {
+    title: 'No me interesa',
+    subtitle: 'Directo - CSE La tacita (07/11/2025)',
+    id: 'Jx762H2bH3k',
+    img: '/yt-min/no-me-interesa.webp',
   },
   {
     title: 'Reb\'n\'taos',
     subtitle: 'Directo - Pub Grace O\'Malley (22/02/2025)',
     id: 'zZy72GgnZdw',
     img: '/yt-min/reb-n-taos.webp',
-  },
-  {
-    title: 'Resumen de concierto',
-    subtitle: 'Directo - Taberna Kanalla (10/05/2025)',
-    id: '1yVuZhjDXCE',
-    img: '/yt-min/kanalla.webp',
   },
 ]
 

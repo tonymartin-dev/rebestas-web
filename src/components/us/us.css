@@ -87,27 +87,27 @@
   }
 
   &.vir > div {
-    background-image: url(/img/vir.jpg);
+    background-image: url(/img/vir.webp);
     &:hover {
-      background-image: url(/img/vir_hov.jpg);
+      background-image: url(/img/vir_hov.webp);
     }
   }
   &.salva > div {
-    background-image: url(/img/salva.jpg);
+    background-image: url(/img/salva.webp);
     &:hover {
-      background-image: url(/img/salva_hov.jpg);
+      background-image: url(/img/salva_hov.webp);
     }
   }
   &.antonio > div {
-    background-image: url(/img/antonio.jpg);
+    background-image: url(/img/antonio.webp);
     &:hover {
-      background-image: url(/img/antonio_hov.jpg);
+      background-image: url(/img/antonio_hov.webp);
     }
   }
   &.lobo > div {
-    background-image: url(/img/lobo.jpg);
+    background-image: url(/img/lobo.webp);
     &:hover {
-      background-image: url(/img/lobo_hov.jpg);
+      background-image: url(/img/lobo_hov.webp);
     }
   }
 }
