@@ -1,10 +1,10 @@
 import YouTube, { YouTubeEvent } from 'react-youtube'
 import './listen.css'
 import { useCallback, useRef, useState } from 'react'
-import reel1 from './assets/reel1.png'
-import reel2 from './assets/reel2.png'
-import reel3 from './assets/reel3.png'
-import reel4 from './assets/reel4.png'
+import reel1 from './assets/reel1.webp'
+import reel2 from './assets/reel2.webp'
+import reel3 from './assets/reel3.webp'
+import reel4 from './assets/reel4.webp'
 
 interface VideoData {
   title: string
@@ -22,19 +22,19 @@ const YT_LIST: VideoData[] = [
     title: 'Vida Normal',
     subtitle: 'Videoclip Oficial',
     id: 'RD_C2UDD2p4rw',
-    img: '/yt-min/vida-normal.png',
+    img: '/yt-min/vida-normal.webp',
   },
   {
     title: 'Reb\'n\'taos',
     subtitle: 'Directo - Pub Grace O\'Malley (22/02/2025)',
     id: 'zZy72GgnZdw',
-    img: '/yt-min/reb-n-taos.png',
+    img: '/yt-min/reb-n-taos.webp',
   },
   {
     title: 'Resumen de concierto',
     subtitle: 'Directo - Taberna Kanalla (10/05/2025)',
     id: '1yVuZhjDXCE',
-    img: '/yt-min/kanalla.png',
+    img: '/yt-min/kanalla.webp',
   },
 ]
 

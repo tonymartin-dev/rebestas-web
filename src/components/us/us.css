@@ -87,16 +87,28 @@
   }
 
   &.vir > div {
-    background-image: url(/img/vir.jpeg);
+    background-image: url(/img/vir.jpg);
+    &:hover {
+      background-image: url(/img/vir_hov.jpg);
+    }
   }
   &.salva > div {
-    background-image: url(/img/salva.jpeg);
+    background-image: url(/img/salva.jpg);
+    &:hover {
+      background-image: url(/img/salva_hov.jpg);
+    }
   }
   &.antonio > div {
-    background-image: url(/img/antonio.jpeg);
+    background-image: url(/img/antonio.jpg);
+    &:hover {
+      background-image: url(/img/antonio_hov.jpg);
+    }
   }
   &.lobo > div {
-    background-image: url(/img/lobo.jpeg);
+    background-image: url(/img/lobo.jpg);
+    &:hover {
+      background-image: url(/img/lobo_hov.jpg);
+    }
   }
 }
 

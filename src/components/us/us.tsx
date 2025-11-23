@@ -1,6 +1,6 @@
 import './us.css'
-import photo1 from './assets/photo1.jpg'
-import photo2 from './assets/photo2.jpg'
+import photo1 from './assets/photo1.webp'
+import photo2 from './assets/photo2.webp'
 
 export default function Us() {
   return (
