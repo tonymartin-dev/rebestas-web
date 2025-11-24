@@ -53,10 +53,11 @@
   padding: 0.5rem; /* TODO: Pasar a variable */
   overflow: hidden;
   max-width: 20vw;
-
+  
   & > div {
     height: 100%;
     background-size: cover;
+    background-position: center;
     border-radius: 1rem;
     overflow: hidden;
     filter: sepia(100%) contrast(2);
@@ -65,6 +66,7 @@
     flex-flow: column;
     justify-content: flex-end;
     align-items: center;
+    text-align: center;
     padding-bottom: 1rem;
     cursor: pointer;
     &:hover {

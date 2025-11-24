@@ -10,17 +10,15 @@
     margin: 0 0.6rem;
     text-transform: uppercase;
     filter: drop-shadow(0 0 0.1rem black);
-  }
-
-  & li {
     & img {
       height: 1.5rem;
       filter: invert(100%) blur(0.5px);
     }
   }
 
+
   &.big-icons li img {
     height: 4rem;
-    margin: 0 2rem;
+    margin: 0rem;
   }
 }

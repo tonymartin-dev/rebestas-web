@@ -7,7 +7,9 @@
   background-color: black;
   min-height: calc(100vh + 6rem);
   justify-content: flex-start;
+  box-shadow: 0px 55px 0px black, inset 0px 0px 25px 5px black;
   animation: hero-pumping 20s infinite;
+
 
   .hero-container {
     max-width: 60%;
@@ -15,7 +17,7 @@
     flex-flow: column;
     text-align: right;
   }
-  
+
   .full-logo {
     animation: 1s mail-logo-enter;
     z-index: 10;
@@ -23,15 +25,14 @@
 
   h1 {
     animation: 2s fade-in,
-               2s glow-tile infinite alternate 2s;
+      2s glow-tile infinite alternate 2s;
     color: #111;
-    text-shadow: 0 0 5px #FFF, 0
-      0 10px #FFF, 
-      0 0 5px #FFF, 
-      0 0 5px var(--glow-color), 
-      0 0 5px var(--glow-color), 
-      0 0 5px var(--glow-color), 
-      0 0 5px var(--glow-color), 
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
+      0 0 5px #FFF,
+      0 0 5px var(--glow-color),
+      0 0 5px var(--glow-color),
+      0 0 5px var(--glow-color),
+      0 0 5px var(--glow-color),
       0 0 5px var(--glow-color);
     margin-top: -11vw;
     font-size: 4vw;
@@ -47,21 +48,32 @@
     min-height: 50vh;
     animation: none;
     background-attachment: unset;
+    background-size: contain;
+    background-position-y: bottom;
+    justify-content: flex-start;
+    padding-top: 65px;
   }
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes hero-pumping {
   0% {
     background-size: 100% auto;
   }
+
   50% {
     background-size: 110% auto;
   }
+
   100% {
     background-size: 100% auto;
   }
@@ -72,27 +84,34 @@
     transform: translateY(100vh);
     opacity: 0;
   }
+
   20% {
     transform: translateY(-5vh);
     opacity: 1;
   }
+
   25% {
     transform: translateY(5vh);
   }
+
   30% {
     transform: translateY(-2vh);
   }
+
   33% {
     transform: translateY(1vh);
     opacity: 0;
   }
+
   35% {
     transform: translateY(1vh);
     opacity: 1;
   }
+
   70% {
     opacity: 0;
   }
+
   71% {
     opacity: 1;
   }
@@ -100,27 +119,36 @@
   89% {
     opacity: 1;
   }
+
   90% {
     opacity: 0;
   }
+
   91% {
     opacity: 1;
   }
 }
 
 @keyframes glow-tile {
-  0%, 20%, 90%, 100% {
+
+  0%,
+  20%,
+  90%,
+  100% {
     text-shadow: 0 0 2px #FFF, 0 0 2px #FFF, 0 0 2px #FFF,
       0 0 2px var(--main-glow-color), 0 0 2px var(--main-glow-color),
       0 0 2px var(--main-glow-color), 0 0 2px var(--main-glow-color),
       0 0 2px var(--main-glow-color);
   }
-  10%, 80% {
+
+  10%,
+  80% {
     text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px #FFF,
       0 0 5px var(--main-glow-color), 0 0 5px var(--main-glow-color),
       0 0 5px var(--main-glow-color), 0 0 5px var(--main-glow-color),
       0 0 5px var(--main-glow-color);
   }
+
   40% {
     text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px #FFF,
       0 0 5px var(--secondary-glow-color), 0 0 5px var(--secondary-glow-color),

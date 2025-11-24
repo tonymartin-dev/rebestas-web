@@ -2,6 +2,7 @@
   background-image: url(/img/brick-wall.webp);
   background-size: cover;
   background-position: bottom;
+  box-shadow: 0 -10px 10px 10px black;
 
   & h2 {
     filter: drop-shadow(0.5rem 0.3rem 4px black);
