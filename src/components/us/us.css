@@ -24,6 +24,8 @@
   border-radius: 0.3rem;
   background-color: white;
   box-shadow: 0.2rem 0.2rem 1rem black;
+  width: 75vw;
+  margin-bottom: 2rem;
   & img {
     width: 100%;
   }

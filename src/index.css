@@ -76,6 +76,14 @@ a {
       width var(--main-transition) ease,
       left var(--main-transition) ease;
   }
+
+  &:hover {
+    text-shadow: 1px 1px 2px purple;
+    & img {
+      filter: drop-shadow(0 0 1rem #bf8fff) invert(100%);
+    }
+  }
+
   &:hover::before,
   &.active::before {
     width: 100%;
