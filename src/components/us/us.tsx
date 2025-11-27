@@ -87,7 +87,7 @@ export default function Us() {
           </div>
           <div className="photo salva">
             <div>
-              <p className="photo-name">Salva</p>
+              <p className="photo-name">Salbass</p>
               <p>Cuerdas gordas</p>
             </div>
           </div>
