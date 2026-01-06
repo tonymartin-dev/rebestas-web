@@ -19,10 +19,10 @@ const VIDEO_OPS = {
 
 const YT_LIST: VideoData[] = [
   {
-    title: 'Vida Normal',
+    title: 'Vividor',
     subtitle: 'Videoclip Oficial',
-    id: '_C2UDD2p4rw',
-    img: '/yt-min/vida-normal.webp',
+    id: 'WhWvEkIt29w',
+    img: '/yt-min/vividor.webp',
   },
   {
     title: 'No me interesa',
@@ -31,10 +31,10 @@ const YT_LIST: VideoData[] = [
     img: '/yt-min/no-me-interesa.webp',
   },
   {
-    title: 'Reb\'n\'taos',
-    subtitle: 'Directo - Pub Grace O\'Malley (22/02/2025)',
-    id: 'zZy72GgnZdw',
-    img: '/yt-min/reb-n-taos.webp',
+    title: 'Vida Normal',
+    subtitle: 'Videoclip Oficial',
+    id: '_C2UDD2p4rw',
+    img: '/yt-min/vida-normal.webp',
   },
 ]
 
