@@ -63,4 +63,8 @@ ul {
     display: none;
     flex-grow: 0;
   }
+
+  .logo-container {
+    left: 0;
+  }
 }
