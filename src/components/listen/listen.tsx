@@ -85,6 +85,31 @@ export default function Listen() {
       <section id="listen">
         <h2>Escúchanos</h2>
 
+        <div className="spotify">
+          <iframe 
+            data-testid="embed-iframe" 
+            style={{ borderRadius: '12px' }} 
+            src="https://open.spotify.com/embed/track/0v25HkG4xYN4SMxwNmM5il?utm_source=generator&theme=0" 
+            width="100%" 
+            height="152" 
+            frameBorder="0" 
+            allowFullScreen={true} 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"
+          ></iframe>
+          <iframe 
+            data-testid="embed-iframe" 
+            style={{ borderRadius: '12px' }} 
+            src="https://open.spotify.com/embed/track/4bzWHrVI67qiPTFtK1pUpM?utm_source=generator&theme=0" 
+            width="100%" 
+            height="152" 
+            frameBorder="0" 
+            allowFullScreen={true} 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"
+          ></iframe>
+        </div>
+
         <div className="videos">
           {YT_LIST.map(({ title, subtitle, img, id }) => (
             <button

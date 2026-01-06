@@ -1,6 +1,6 @@
 import SocialMediaLinks from '../shared/social-media-links/social-media-links'
 import './contact.css'
-import emailImg from './assets/email.png'
+import emailImg from './assets/email.webp'
 
 import { FormEvent, useCallback, useRef } from 'react'
 
