@@ -2,14 +2,17 @@
   color: var(--secondary-text-color);
 }
 
-.videos {
+
+.videos,
+.spotify {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 100%;
 }
 
-.listen-button {
+.listen-button,
+.spotify iframe {
   width: 30rem;
   max-width: 90%;
   padding: 0;
@@ -83,7 +86,7 @@ dialog {
   }
 }
 
-iframe {
+dialog iframe {
   height: 100%;
   width: 100%;
 }
